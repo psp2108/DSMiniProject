@@ -218,7 +218,7 @@ int main(){
 	while(1){
         clrscr();
 
-        printf("Enter choice:\n");
+        printf("\nEnter choice:\n");
         printf("1. Generate Lottery Tickets\n");
         printf("2. Display Aailable Tickets\n");
         printf("3. Display Sold Tickets\n");
@@ -227,7 +227,7 @@ int main(){
         printf("6. Exit\n");
 
         choice = getch() - 48;
-
+        clrscr();
         switch(choice){
             case 1:
                 generateLotteryTickets();
