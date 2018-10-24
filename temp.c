@@ -11,11 +11,11 @@ long randnum(long bound)
     long r = 0;
     int i;
 
-    for(i = 0; i < 10; i++){
+//    for(i = 0; i < 10; i++){
         clock_gettime(1, &ts);
         srand((time_t)ts.tv_nsec);
         r += rand();
-    }
+ //   }
 
     return r % bound;
 }

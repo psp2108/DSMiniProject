@@ -185,7 +185,7 @@ void generateLotteryTickets(){
         insertNewTicket(num++);
     }
 
-    printf("Lottery tickets generated from %lld to %lld.",initial, num);
+    printf("Lottery tickets generated from %lld to %lld.",initial, num-1);
 
 }
 
@@ -194,7 +194,7 @@ void displayAndSell(){
 
     showAvailableTickets();
 
-    printf("Enter serial number to be selled: ");
+    printf("Enter the ticket no. to be sold: ");
     scanf("%li",&loc);
 
     sellTicket(loc);
@@ -220,7 +220,7 @@ int main(){
 
         printf("\nEnter choice:\n");
         printf("1. Generate Lottery Tickets\n");
-        printf("2. Display Aailable Tickets\n");
+        printf("2. Display Available Tickets\n");
         printf("3. Display Sold Tickets\n");
         printf("4. Sell Ticket\n");
         printf("5. Get Winning Lottery Number\n");
